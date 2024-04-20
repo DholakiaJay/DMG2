@@ -1,0 +1,169 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Service Booking Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      form {
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 50px;
+        position: static;
+        padding: 55px;
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #283747;
+        color: white;
+      }
+      i
+      {
+        color:white;
+        background-color: transparent;
+
+      }
+      i:hover
+      {
+        color:yellow;
+        font-size: larger;
+
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1 align="center">
+        <a href="/index.html"
+          ><i style="font-size: 30px" class="fa">&#xf015;</i></a
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/series/thar.html"><i style="font-size: 30px;" class="fa">&#xf1b9;</i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/services/insurance.html"><i style="font-size: 30px;" class="fa">&#xf013;</i></a>
+      </h1>
+
+      <pre><b><h2 style="color: yellow; text-align: center;">Fill The Form For Booking</h2></b></pre>
+      <br />
+
+      <fieldset>
+        <legend style="color: yellow">Your Details</legend>
+        <br />
+
+        <lable>Name</lable>
+        <input type="text" placeholder="Enter Your Name" required /><br /><br />
+
+        <lable>Email</lable>
+        <input
+          type="email"
+          placeholder="Enter Your Email"
+          required
+        /><br /><br />
+
+        <lable>Contact Number</lable>
+        <input type="tel" value="+91" required /> &nbsp;
+        <input type="tel" placeholder="Enter Another Number " /><br /><br />
+
+        <lable>Address</lable>
+        <textarea placeholder="Enter Your Address...." required></textarea
+        ><br /><br />
+
+        <lable>City</lable>&nbsp;&nbsp;
+        <select required>
+          <option value="Rajkot">Rajkot</option>
+          <option value="Ahemdabad">Ahemdabad</option>
+          <option value="Surendranagar">Surendranagar</option>
+          <option value="Gandhinagar">Gandhinagar</option>
+          <option value="Baroda">Baroda</option>
+          <option value="Mumbai">Mumabai</option></select
+        ><br /><br />
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend style="color: yellow">Booking Service Details</legend>
+        <br />
+
+        <lable>Select Service</lable>
+        <input list="service" name="service" required />
+        <datalist name="service" id="service">
+
+          <option value="Washing">Car Wash</option>
+          <option value="Engine Repairing">Engine Repair</option>
+          <option value="Car Full Wash And General">Full Service</option>
+          <option value="Vintage Car Dealing">Car Dealing</option>
+          <option value="Alignment">Wheels Alignment</option>
+          <option value="Sprey And Modification">Car Sprey /Modification</option>
+          <option value="Punchture">All Type Of Punchture</option>
+          <option value="Insurance">All Type Of Car Insurance</option>
+        <br /><br />
+
+        <!-- <lable>Select Model</lable>
+        <input list="model" name="model" required />
+        <datalist name="model" id="model">
+          <option value="Innova V">V</option>
+          <option value="Mercedes GLS">GLS</option>
+          <option value="Fortuner SS">SS</option>
+          <option value="Jeep Compass">Compass</option></datalist
+        ><br /><br />
+
+        <lable>Select Car Color</lable>
+        <input list="color" name="color" required />
+        <datalist name="color" id="color">
+          <option value="Red">Red</option>
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="Black Matt">Black Matt</option>
+          <option value="Blue">Blue</option>
+          <option value="Coper Black">Coper Black</option>
+          <option value="Silver">Silver</option>
+          <option value="Maganta">Maganta</option>
+          <option value="OffWhite">OffWhite</option></datalist
+        ><br /><br /> -->
+
+        <lable>Date</lable>
+        <input type="date" required /><br /><br />
+
+        <!-- <lable>Select Delivery Location</lable>
+        <input list="city" name="city" required />
+        <datalist name="city" id="city">
+          <option value="Rajkot">Rajkot</option>
+          <option value="Ahemdabad">Ahemdabad</option>
+          <option value="Surendranagar">Surendranagar</option>
+          <option value="Gandhinagar">Gandhinagar</option>
+          <option value="Baroda">Baroda</option>
+          <option value="Mumabai" disabled>Mumbai</option></datalist
+        ><br /><br /> -->
+
+        <lable
+          >Payment Type <input type="radio" name="pymt" />Cash &nbsp;
+          <input type="radio" name="pymt" />Cheque</lable
+        ><br /><br />
+      </fieldset>
+      <br />
+
+      <center>
+        <input
+          type="reset"
+          style="
+            color: orange;
+            background-color: transparent;
+            font-size: larger;
+          "
+        />&nbsp;&nbsp;&nbsp;
+        <input
+          type="submit"
+          style="
+            color: yellow;
+            background-color: transparent;
+            font-size: larger;
+          "
+        />
+      </center>
+    </form>
+  </body>
+</html>
